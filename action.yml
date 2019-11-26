@@ -1,0 +1,6 @@
+# action.yml
+name: 'qt_docker_action'
+description: 'runs arbitrary commands inside a docker container that has qmake et al'
+runs:
+  using: 'docker'
+  image: 'docker:/rabbits/qt:5.13-desktop'
