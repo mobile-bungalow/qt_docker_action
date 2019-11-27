@@ -11,4 +11,4 @@ runs:
   image: 'Dockerfile'
   args: 
     - ${{ inputs.project_file }}
-      ${{ inputes.executable }}
+      ${{ inputs.executable }}
