@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: mobile-bungalow/qt_docker_action@alpha11
+    - uses: mobile-bungalow/qt_docker_action@alpha12
       with:
         project_file: ./tests/broken.pro
         exectuable: ./broken
