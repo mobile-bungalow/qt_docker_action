@@ -1,6 +1,12 @@
 # action.yml
 name: 'qt_docker_action'
 description: 'runs arbitrary commands inside a docker container that has qmake et al'
+inputs: 
+  command:
+    description: 'this will be substituted for the entry point field'
+    required: true
+    default: echo "No Commands Specified!" && exit 1
 runs:
   using: 'docker'
-  image: 'docker:/rabbits/qt:5.13-desktop'
+  image: 'docker://rabbits/qt:5.13-desktop'
+  entrypoint: ${{ inputs.command }}
