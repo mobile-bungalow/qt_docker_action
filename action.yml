@@ -9,4 +9,4 @@ inputs:
 runs:
   using: 'docker'
   image: 'docker://rabbits/qt:5.13-desktop'
-  entrypoint: ["echo","ghouls"] #${{ inputs.command }}
+  entrypoint: "echo ghouls" #${{ inputs.command }}
