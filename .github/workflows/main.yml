@@ -6,11 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: mobile_bungalow/qt_docker_action@valpha
+      - uses: mobile-bungalow/qt_docker_action@valpha
   test_actual:
     runs-on: ubuntu-latest
     steps:
-    - use: mobile_bungalow/qt_docker_action@valpha
+      - use: mobile-bungalow/qt_docker_action@valpha
         with:
           command: "echo malto benne! && qmake"
 
