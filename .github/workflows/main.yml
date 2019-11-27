@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - use: mobile-bungalow/qt_docker_action@valpha
-      with:
-       command: "echo malto benne! && qmake"
+        with:
+          command: "echo malto benne! && qmake"
 
